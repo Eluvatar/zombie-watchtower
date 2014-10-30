@@ -5,6 +5,11 @@ import json
 from nsapi import api_request
 from sys import argv
 
+if( len(argv) < 3 ):
+    print "usage: ./zombie_scan <region> <user>"
+    print "(user must be a valid identifier of you as required by http://www.nationstates.net/pages/api.html#terms )"
+    exit()
+
 region = argv[1]
 
 author = 'Eluvatar'
