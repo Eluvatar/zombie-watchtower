@@ -40,7 +40,8 @@ nations = api_request({'region':region,'q':'nations'},user_agent).find('NATIONS'
 for nat in nations:
         try:
             entry = {"name":nat}
-            natxml = api_request({'nation':nat,'q':'zombie'},user_agent)
+            natxml = api_request({'nation':nat,'q':['zombie','name']},user_agent)
+            entry["Name"] = natxml.find("NAME").text
             zx = natxml.find('ZOMBIE')
             entry["action"] = zx.find('ZACTION').text
             entry["zombies"] = int(zx.find('ZOMBIES').text)
