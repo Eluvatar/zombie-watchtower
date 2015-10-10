@@ -7,7 +7,7 @@ May be combined with other tools to make a helpful webpage
 
 Do not use in a way that does not comply with the API Rate limits, please.
 
-## Example Web Page Fragment
+## Example Web Page
 
 ```html
 <html>
