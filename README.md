@@ -7,9 +7,12 @@ May be combined with other tools to make a helpful webpage
 
 Do not use in a way that does not comply with the API Rate limits, please.
 
-# Example Web Page Fragment
+## Example Web Page Fragment
 
 ```html
+<html>
+<head>
+<title>Zombie Observation Post</title>
 <script type="text/javascript">
 
 var region_name = 'Your Region Name';
@@ -51,4 +54,6 @@ $(document).ready(function(){
 <img src="http://some.site.com/your_regional_image.jpg" alt="">
 <br><noscript><p style="font-style:italic; font-weight:bold; font-size:12pt; color:red;">Because you have javascript disabled, this page will not work.</p></noscript>
 </div></div></div>
+</body>
+</html>
 ```
